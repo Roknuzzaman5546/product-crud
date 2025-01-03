@@ -1,3 +1,6 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <x-app-layout>
     <x-slot name="header">
         <div class="flex justify-between items-center">
@@ -12,6 +15,15 @@
         </div>
     </x-slot>
 
+
+    <div class=" max-w-2xl mx-auto mt-5">
+        <h2>Here i create select dropdown</h2>
+        <select name="" id="country" class="js-example-basic-single">
+            <option value="">Dhaka</option>
+            <option value="">Bagura</option>
+            <option value="">Chittagong</option>
+        </select>
+    </div>
 
     <div class="py-8 bg-gray-100 min-h-screen">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -90,6 +102,8 @@
     </div>
 </x-app-layout>
 
-<tbody>
-
-</tbody>
+<script>
+    $(document).ready(function () {
+        $('.js-example-basic-single').select2();
+    });
+</script>
