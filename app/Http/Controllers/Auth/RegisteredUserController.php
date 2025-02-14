@@ -42,8 +42,10 @@ class RegisteredUserController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
+
         event(new Registered($user));
 
+        // return redirect(route('login'))->with('status', 'registration-successful');
         Auth::login($user);
 
         return redirect(RouteServiceProvider::HOME);

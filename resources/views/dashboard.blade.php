@@ -8,6 +8,7 @@
             <h2 class="font-semibold text-2xl text-gray-800 leading-tight">
                 {{ __('All Product') }}
             </h2>
+            <h2>Hey {{ $users->name  }}</h2>
             <a href="{{ route('products.create') }}">
                 <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded shadow-md">
                     + Create Product
