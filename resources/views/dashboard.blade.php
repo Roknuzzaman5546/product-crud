@@ -17,9 +17,9 @@
     </x-slot>
 
 
-    <div class=" max-w-2xl mx-auto mt-5">
-        <h2>Here i create select dropdown</h2>
-        <select name="" id="country" class="js-example-basic-single">
+    <div class="w-1/4 mx-auto mt-5 text-center">
+        <h2 class="Text-xl font-bold my-2">Here i create select dropdown</h2>
+        <select name="" id="country" class="js-example-basic-single w-60 h-7">
             <option value="">Dhaka</option>
             <option value="">Bagura</option>
             <option value="">Chittagong</option>
