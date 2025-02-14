@@ -21,7 +21,7 @@
     </div>
     <div class=" bg-white shadow-lg rounded-lg overflow-hidden max-w-2xl mx-auto">
         <!-- Header -->
-        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white p-6">
+        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white p-6 text-center">
             <h1 class="text-3xl font-bold">Edit this Product</h1>
             <p class="text-sm mt-2">Fill in the details below to add a new product to your catalog.</p>
         </div>

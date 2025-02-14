@@ -23,7 +23,7 @@
 
     <div class=" bg-white shadow-lg rounded-lg overflow-hidden max-w-2xl mx-auto mt-3">
         <!-- Header -->
-        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white p-6">
+        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white p-6 text-center">
             <h1 class="text-3xl font-bold">Create a New Product</h1>
             <p class="text-sm mt-2">Fill in the details below to add a new product to your catalog.</p>
         </div>
@@ -32,7 +32,7 @@
         <div class="p-8">
             <form action="{{ route('products.store') }}" method="POST" class="space-y-6">
                 @csrf
-                <div>
+                <div class="">
                     <label for="name" class="block text-sm font-medium text-gray-700">Product Name</label>
                     <input type="text" id="name" name="name"
                         class="mt-1 block w-full rounded-lg border border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 p-3 text-gray-700"

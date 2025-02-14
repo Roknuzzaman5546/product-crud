@@ -14,7 +14,7 @@ class ProductController extends Controller
 
     public function index()
     {
-        $products = Product::paginate(5); // Paginate products
+        $products = Product::paginate(7); // Paginate products
         $users = User::all(); // Get all users
         return view('dashboard', compact('products', 'users')); // Pass both to the view
     }
